@@ -81,7 +81,7 @@ public class LocalConfig implements Cfg{
 						Maximum amount of Heart Containers one player can consume.
 						Do note that the maximum health point is capped at value of 1024 (or 512 hearts) by Minecraft's default
 						attribute system; without modifying these limits, Heart Containers won't give you extra hearts beyond that.""")
-				.defineInRange("maxHeartContainers", 20, 0, 512);
+				.defineInRange("maxHeartContainers", 512, 0, 512);
 
 		maxStamina = b.comment("Maximum amount of stamina Player can get. Do note that one third of this value is equal to one stamina wheel.")
 				.defineInRange("maxStamina", 3000, 0, Integer.MAX_VALUE);
